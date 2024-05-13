@@ -15,5 +15,8 @@
    }
 //    var_dump($_SESSION['users']);
    ?>
+<div class="container">
+<h1>Hello : <?php  echo $_SESSION['users']['username']; ?>  </h1>
+</div>
 </body>
 </html>
