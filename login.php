@@ -20,15 +20,15 @@
         $sqlState->execute([$username,$pass]);
         if($sqlState->rowCount()>=1){
             $_SESSION['users']=$sqlState->fetch();
-            var_dump($sqlState->fetch());
-            // header("location:admin.php")         
+            // var_dump($sqlState->fetch());
+            header("location:home.php");      
          ?>
 
         <?php
         }else{
             ?>
         <div class="alert alert-danger"  role="alert">
-             Utilisateur no exesit 
+             User no exesit 
         </div>
 
         <?php
