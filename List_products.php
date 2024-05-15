@@ -32,7 +32,6 @@
 require_once '/xampp/htdocs/site_ecommerce_php/database/database.php';
 $listP=$pdo->query('SELECT * FROM produit ')->fetchAll(PDO::FETCH_ASSOC);
     foreach($listP as $Lproduct){
-        $datap=date('y-m-d');
        ?>
       <tr>
       <th scope="row"><?php echo $Lproduct['id'] ?></th>
@@ -40,7 +39,7 @@ $listP=$pdo->query('SELECT * FROM produit ')->fetchAll(PDO::FETCH_ASSOC);
       <td><?php echo   $Lproduct['Prix'] ?></td>
       <td><?php echo   $Lproduct['Discount'] ?></td>
       <td><?php echo   $Lproduct['id_categorie'] ?></td>
-      <td><?php  echo $datap ?></td>
+      <td><?php  echo $Lproduct['date_creation'] ?></td>
       <td>             
                 <a href="#"  class="btn btn-success" >Modifier</a>
                 <a onclick="return confirm('vouler-vous vrament suprimer cette users')" href="#" class="btn btn-danger" >Supprimer</a>
