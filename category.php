@@ -23,7 +23,11 @@
         $dtatcategory=$pdo->prepare('INSERT INTO categorie 
         VALUES (null,?,?,?)');
         $dtatcategory->execute([$libelle,$des,$dataC]);
-        var_dump($dtatcategory);
+        ?>
+<div class="alert alert-success" role="alert">
+        The category has been added successfully
+    </div>    
+        <?php
         // header('location:login.php');
     }else{
         ?>

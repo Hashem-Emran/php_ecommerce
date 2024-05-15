@@ -3,7 +3,7 @@ $coonnact=false;
 session_start();
 if(isset($_SESSION['users'])){
   $coonnact=true;
-}
+} 
 ?>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -27,6 +27,10 @@ if(isset($_SESSION['users'])){
 
       <li class="nav-item active">
         <a class="nav-link" href="category.php">Add category <span class="sr-only"></span></a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="logout.php">Logout<span class="sr-only"></span></a>
       </li>
               <?php
             }else{
