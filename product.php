@@ -11,7 +11,6 @@
 
 <div class="container">
     <h1>Add Product</h1>
-
     <?php
     if(isset($_POST['add_product'])){
       $libelle=$_POST['libelle'];

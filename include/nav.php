@@ -30,6 +30,15 @@ if(isset($_SESSION['users'])){
       </li>
 
       <li class="nav-item active">
+        <a class="nav-link" href="List_categories.php">List_categories <span class="sr-only"></span></a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="List_products.php">List_products <span class="sr-only"></span></a>
+      </li>
+
+
+      <li class="nav-item active">
         <a class="nav-link" href="logout.php">Logout<span class="sr-only"></span></a>
       </li>
               <?php
