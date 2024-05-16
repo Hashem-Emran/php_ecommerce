@@ -41,8 +41,8 @@ $listP=$pdo->query('SELECT * FROM produit ')->fetchAll(PDO::FETCH_ASSOC);
       <td><?php echo   $Lproduct['id_categorie'] ?></td>
       <td><?php  echo $Lproduct['date_creation'] ?></td>
       <td>             
-                <a href="#"  class="btn btn-success" >Modifier</a>
-                <a onclick="return confirm('vouler-vous vrament suprimer cette users')" href="#" class="btn btn-danger" >Supprimer</a>
+                <a href="modify_products.php?idP=<?php echo $Lproduct['id']?>"  class="btn btn-success" >Modifier</a>
+                <a onclick="return confirm('vouler-vous vrament suprimer cette products')" href="delete_products.php?idP=<?php echo $Lproduct['id'] ?>" class="btn btn-danger" >Supprimer</a>
                 </td>
     </tr>
        <?php
