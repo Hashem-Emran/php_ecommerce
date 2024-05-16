@@ -12,7 +12,7 @@
 <h1>List categories </h1>
 <hr>
 <table class="table">
-  <thead class="table tab le-dark">
+  <thead class="table table-dark">
     <tr>
       <th scope="col">#</th>
       <th scope="col">Libleel</th>

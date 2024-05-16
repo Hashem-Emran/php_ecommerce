@@ -14,6 +14,14 @@
 
 <h1>Liste Products  </h1>
 <hr>
+<?php
+
+// require_once '/xampp/htdocs/site_ecommerce_php/database/database.php';
+// $listC=$pdo->query('SELECT * FROM categorie ')->fetchAll(PDO::FETCH_ASSOC);
+// foreach ($listC as $C) {
+//   echo "<td>" . $C['Libelle'] . "</td>";
+// }
+       ?>
 <table class="table">
   <thead class="table table-dark">
     <tr>
@@ -38,7 +46,7 @@ $listP=$pdo->query('SELECT * FROM produit ')->fetchAll(PDO::FETCH_ASSOC);
       <td><?php echo $Lproduct['Libelle'] ?></td>
       <td><?php echo   $Lproduct['Prix'] ?></td>
       <td><?php echo   $Lproduct['Discount'] ?></td>
-      <td><?php echo   $Lproduct['id_categorie'] ?></td>
+         <td><?php  echo $Lproduct['id_categorie'] ?></td>
       <td><?php  echo $Lproduct['date_creation'] ?></td>
       <td>             
                 <a href="modify_products.php?idP=<?php echo $Lproduct['id']?>"  class="btn btn-success" >Modifier</a>
@@ -47,10 +55,11 @@ $listP=$pdo->query('SELECT * FROM produit ')->fetchAll(PDO::FETCH_ASSOC);
     </tr>
        <?php
     }
+    
 ?>
+
   </tbody>
 </table>
-
 </div>
     
 </body>
