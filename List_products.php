@@ -12,6 +12,10 @@
 
 <div class="container">
 
+<!-- $test = fn() => "hello";
+echo $test(); -->
+
+
 <h1>Liste Products  </h1>
 <hr>
 <?php
@@ -21,6 +25,7 @@
 // foreach ($listC as $C) {
 //   echo "<td>" . $C['Libelle'] . "</td>";
 // }
+
        ?>
 <table class="table">
   <thead class="table table-dark">
