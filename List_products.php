@@ -10,7 +10,7 @@
 
 <?php  include '/xampp/htdocs/site_ecommerce_php/include/nav.php' ?>
 
-<div class="container">
+<div class="container"> 
 
 <!-- $test = fn() => "hello";
 echo $test(); -->
